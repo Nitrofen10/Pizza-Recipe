@@ -4,10 +4,149 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizza Recipe!</title>
+    <style>
+        body {
+            padding: 30px;
+            background-color:#f5f5f5;
+        }
+        h1 {
+            font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
+            font-weight: 800;
+        }
+        p {
+            color: #222;
+            font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
+            font-size: 22px;
+        }
+        .author-name {
+            display: block;
+            color: #222;
+            font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
+            font-weight: 800;
+            line-height: 26px;
+            font-size: 22px;
+        }
+        .company-name {
+            display: block;
+            color: #222;
+            font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
+            font-weight: 500;
+            line-height: 26px;
+            font-size: 22px;
+        }
+        .heading-line {
+            margin: 30px 40px;
+        }
+        .flex {
+            display: flex;
+            width: 100%;
+        }
+        .flex-wrap {
+            flex-wrap: wrap;
+        }
+        .justify-center {
+            justify-content: center;
+        }
+        .ingredients {
+            width: 20%;
+            text-align: center;
+        }
+        .ingredients > h2 {
+            font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
+        }
+        .preparation {
+            width: 75%;
+            text-align: center;
+        }
+        .preparation > h2 {
+            font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
+        }
+        .list-style-none {
+            list-style: none;
+            padding: 0;
+        }
+        .list-style-none > li {
+            font-size: 20px;
+        }
+        .list-style-numbered {
+            max-width: 300px;
+            counter-reset: prepList;
+        }
+        .list-style-numbered > li {
+            font-size: 20px;
+            margin-bottom: 1rem!important;
+            text-align: left;
+            list-style: none;
+        }
+        .list-style-numbered > li:before {
+            display: inline-block;
+            counter-increment: prepList;
+            content: counter(prepList);
+            color: teal;
+            font-weight: 800;
+            margin-left: -2rem;
+            width: 33px;
+        }
+        .px-3 {
+            padding-left: 0.75rem;
+            padding-right: 0.75rem;
+        }
+        .-mx-3 {
+            margin-left: -0.75rem;
+            margin-right: -0.75rem;
+        }
+        h3 {
+            font-family: "Proxima Nova", Helvetica, Arial, sans-serif;  
+        }
+        .uppercase {
+            text-transform: uppercase;
+            font-size: .875rem!important;
+        }
+    </style>
 </head>
 <body>
-    <h1>Pizza Recipe - Home</h1>
-    <p>Commit test<p>
-    <p>GH pages push<p>
+    <h1>How To Make The Best Homemade Pizza</h1>
+
+    <p>Making homemade pizza dough can sound like a lot of work, but it’s 
+        so worth the bragging rights. The dough itself requires few ingredients 
+        and just a little bit of rising and rest time. While you wait for the 
+        dough to be ready, you can get to work prepping your tomato sauce, chopping
+         fresh vegetables, or grating the cheese you’ll put on top. Bake for 
+         15 minutes, garnish with basil (or, let’s be real, more cheese), and enjoy 
+         showing off your way-better-than-takeout creation.</p>
+
+    <div class="author-name">Severian Kissire</div>
+    <div class="company-name">Company Name</div>
+
+    <hr class="heading-line">
+
+    <!-- Ingredients & Preparation container-->
+    <div class="flex flex-wrap justify-center -mx-3">
+        <!-- Ingredients-->
+        <div class="ingredients px-3">
+            <h2>Ingredients</h2>
+            <ul class="list-style-none">
+                <li>for 16 servings</li>
+                <li>2 ½ cups warm water</li>
+                <li>1 teaspoon sugar</li>
+                <li>2 teaspoons active dry yeast</li>
+            </ul>
+            <h3 class="uppercase">Optional Toppings</h3>
+        </div>
+         <!-- Preparation-->
+         <div class="preparation px-3">
+            <h2>Preparation</h2>
+            <div class="flex justify-center">
+                <ol class="list-style-numbered">
+                    <li>“Bloom” the yeast by sprinkling the sugar and yeast in the warm water. Let sit for 10 minutes, until bubbles form on the surface.</li>
+                    <li>2 ½ cups warm water</li>
+                    <li>1 teaspoon sugar</li>
+                    <li>2 teaspoons active dry yeast</li>
+                </ol>
+            </div>
+            
+        </div>
+    </div>
+
 </body>
 </html>
