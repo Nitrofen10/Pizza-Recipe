@@ -1,0 +1,133 @@
+body {
+    background-color: #006491;
+}
+.page-container {
+    padding: 30px;
+    background-color: rgb(253 253 253);
+}
+.header {
+    padding: 10px 30px;
+    background-color:#006491;
+    border-bottom: 5.5px solid #e31837;
+    box-shadow: 0 0 0.8125rem 0 rgba(0,0,0,.75);
+}
+.page-title {
+    color: white;
+    font-family: Impact, Charcoal, sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.header-paragraph {
+    color: white;
+    font-size: 19px;
+}
+h1 {
+    font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
+    font-weight: 800;
+}
+p {
+    color: #222;
+    font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
+    font-size: 22px;
+}
+.dash {
+    color: white;
+    display: inline;
+}
+.author-name {
+    display: inline;
+    color: white;
+    font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
+    font-weight: 800;
+    line-height: 26px;
+    font-size: 22px;
+}
+.company-name {
+    display: block;
+    color: white;
+    font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    line-height: 26px;
+    font-size: 22px;
+    padding-left: 21px;
+}
+.heading-line {
+    margin: 30px 40px;
+}
+.flex {
+    display: flex;
+    width: 100%;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.justify-center {
+    justify-content: center;
+}
+.ingredients {
+    width: 20%;
+    text-align: center;
+}
+.ingredients > h2 {
+    font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
+}
+.preparation {
+    width: 33%;
+    text-align: center;
+}
+.preparation > h2 {
+    font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
+}
+.list-style-none {
+    list-style: none;
+    padding: 0;
+}
+.list-style-none > li {
+    font-size: 20px;
+}
+.list-style-numbered {
+    max-width: 300px;
+    counter-reset: prepList;
+}
+.list-style-numbered > li {
+    font-size: 20px;
+    margin-bottom: 1rem!important;
+    text-align: left;
+    list-style: none;
+}
+.list-style-numbered > li:before {
+    display: inline-block;
+    counter-increment: prepList;
+    content: counter(prepList);
+    color: #006491;
+    font-weight: 800;
+    margin-left: -2rem;
+    width: 33px;
+}
+.px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+.-mx-3 {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+}
+h3 {
+    font-family: "Proxima Nova", Helvetica, Arial, sans-serif;  
+}
+.uppercase {
+    text-transform: uppercase;
+    font-size: .875rem!important;
+}
+.ingredient-type {
+    font-size: 18px;
+}
+.pizza-pictures {
+    width: 33%;
+    text-align: center;
+}
+.pizza-picture {
+    height: auto;
+    width: 100%;
+    padding-bottom: 20px;
+}
